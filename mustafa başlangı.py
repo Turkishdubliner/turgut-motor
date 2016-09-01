@@ -16,10 +16,10 @@ while True:
 
     if not is_ascii(kullanıcı_adı):
         print('Lutfen turkce karakter kullanmayın\n')
-        quit()
+        continue
     if not is_ascii(parola):
         print("lutfen turkce karakter kullanmayın\n")
-        quit()
+        continue
 
 
     print("========================================\n"
@@ -43,4 +43,8 @@ while True:
         file3 = open("file3.txt",encoding='utf-8')
         print(file3.read())
         file3.close()
-
+    elif seçim == "4":
+        print("bizi tercih ettiğiniz için teşekkür ederiz")
+    else :
+        print("YANLIS KARAKTER GİRDİNİZ LÜTFEN TEKRAR BİR KARAKTER GİRİNİZ")
+        continue
